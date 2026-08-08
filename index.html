@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        hand: ['Kalam', 'cursive'],
+                        sans: ['Poppins', 'sans-serif'],
+                                }
+                        }
+                    }
+        }
+</script>
 </head>
 <body>
-    <div class="relative h-[650px] overflow-hidden">
+    <div class="relative h-[750px] overflow-hidden">
         <div>
             <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
                 <source src="10707381-hd_1920_1080_30fps.mp4" type="video/mp4">
         </div>
 
-        <header class="relative z-1">
+        <header class="relative z-10">
 
             <nav class="w-[100%] h-[12vh] flex justify-between items-center px-32 mt-2">
 
-                <div class="w-25">
+                <div>
                     <a href="index.html">
-                        <img src="logo.svg" alt="logo">
+                        <img src="logo.svg" alt="logo" class="w-25">
                     </a>
                 </div>
 
@@ -31,7 +48,7 @@
                        <li> <a href="#expeditions" class="hover:text-[#ffc107]">Expeditions</a> </li>
                        <li> <a href="" class="hover:text-[#ffc107]">Gallery</a> </li>
                        <li> <a href="" class="hover:text-[#ffc107]">FAQ</a> </li>
-                       <li> <a href="" class="bg-blue-600 px-6 py-3 rounded-md hover:bg-[#ffc107]">Contact 
+                       <li> <a href="#" class="bg-blue-600 px-6 py-3 rounded-md hover:bg-[#ffc107]">Contact 
                                 <i class="fa-sharp fa-regular fa-circle-right"></i>
                             </a> 
                         </li>
@@ -43,7 +60,20 @@
 
         </header>
 
+        <section class="relative z-10 h-[88vh] flex justify-center items-center text-center text-white">
+
+            <div class="mt-8">
+                <h1 class="font-hand text-7xl font-bold mb-10">Explore</h1>
+                <h2 class="font-sans text-5xl font-semibold mt-3">Untamed Wilderness</h2>
+                <p class="text-2xl mt-3">Now operating in Jordan</p>
+                <a href="#" class="inline-block mt-6 px-8 py-2 bg-blue-600 rounded-md uppercase hover:bg-[#ffc107]">Know more
+                    <i class="fa-sharp fa-regular fa-circle-right"></i>
+                </a>
+            </div>
+
+        </section>
     </div>
+
     
 </body>
 </html>
