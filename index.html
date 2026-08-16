@@ -6,7 +6,6 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,56 +19,78 @@
                     fontFamily: {
                         hand: ['Caveat', 'cursive'],
                         sans: ['Poppins', 'sans-serif'],
-                                }
-                        }
                     }
+                }
+            }
         }
     </script>
 </head>
+
 <body>
-    
+
     <a href="#"
-        class="fixed right-5 bottom-20 z-[999] flex h-[45px] w-[45px] items-center justify-center rounded-full bg-[#25d366] text-[1.2rem] text-white no-underline shadow-[0_2px_10px_rgba(0,0,0,0.2)]"
+        class="fixed right-3 sm:right-5 bottom-20 z-[999] flex h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] items-center justify-center rounded-full bg-[#25d366] text-[1rem] sm:text-[1.2rem] text-white no-underline shadow-[0_2px_10px_rgba(0,0,0,0.2)]"
         aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <a href="#hero"
-        class="fixed right-5 bottom-[25px] z-[999] flex h-[45px] w-[45px] items-center justify-center rounded-full bg-[#007bff] text-[1.2rem] text-white no-underline shadow-[0_2px_10px_rgba(0,0,0,0.2)]"
+        class="fixed right-3 sm:right-5 bottom-[25px] z-[999] flex h-[40px] w-[40px] sm:h-[45px] sm:w-[45px] items-center justify-center rounded-full bg-[#007bff] text-[1rem] sm:text-[1.2rem] text-white no-underline shadow-[0_2px_10px_rgba(0,0,0,0.2)]"
         aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- video -->
 
-    <div class="relative h-[750px] overflow-hidden">
+    <div class="relative h-[750px] sm:h-[750px] overflow-hidden">
+
         <div>
             <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
                 <source src="10707381-hd_1920_1080_30fps.mp4" type="video/mp4">
+            </video>
         </div>
 
         <!-- navbar -->
 
         <header class="relative z-10">
 
-            <nav class="w-[100%] h-[12vh] flex justify-between items-center px-32 mt-2">
+            <nav class="w-full h-[12vh] flex justify-between items-center px-4 sm:px-8 md:px-12 lg:px-32 mt-2">
 
                 <div>
                     <a href="index.html">
-                        <img src="logo.svg" alt="logo" class="w-25">
+                        <img src="logo.svg" alt="logo" class="w-20 sm:w-25">
                     </a>
                 </div>
 
-                <div class="">
+                <div>
 
-                    <ul class="text-white flex gap-x-10 font-semibold text-[1rem] uppercase">
-                       <li> <a href="#expeditions" class="hover:text-[#ffc107]">Expeditions</a> </li>
-                       <li> <a href="#gallery" class="hover:text-[#ffc107]">Gallery</a> </li>
-                       <li> <a href="#faq" class="hover:text-[#ffc107]">FAQ</a> </li>
-                       <li> <a href="#contact" class="bg-blue-600 px-6 py-3 rounded-md hover:bg-[#ffc107]">Contact 
-                                <i class="fa-sharp fa-regular fa-circle-right"></i>
-                            </a> 
+                    <ul class="text-white flex gap-x-3 sm:gap-x-5 md:gap-x-7 lg:gap-x-10 font-semibold text-[0.65rem] sm:text-[0.75rem] md:text-[0.875rem] lg:text-[1rem] uppercase">
+
+                        <li>
+                            <a href="#expeditions" class="hover:text-[#ffc107]">
+                                Expeditions
+                            </a>
                         </li>
+
+                        <li>
+                            <a href="#gallery" class="hover:text-[#ffc107]">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#faq" class="hover:text-[#ffc107]">
+                                FAQ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="bg-blue-600 px-2 sm:px-3 md:px-4 lg:px-6 py-2 sm:py-2.5 lg:py-3 rounded-md hover:bg-[#ffc107] whitespace-nowrap">
+                                Contact
+                                <i class="fa-sharp fa-regular fa-circle-right"></i>
+                            </a>
+                        </li>
+
                     </ul>
 
                 </div>
@@ -80,49 +101,75 @@
 
         <!-- heading -->
 
-        <section class="relative z-10 h-[88vh] flex justify-center items-center text-center text-white">
+        <section class="relative z-10 h-[88vh] flex justify-center items-center text-center text-white px-4">
 
             <div class="mt-8">
-                <h1 class="font-hand text-8xl font-bold mb-10">Explore</h1>
-                <h2 class="font-poppins text-5xl font-semibold mt-3">Untamed Wilderness</h2>
-                <p class="text-2xl mt-3">Now operating in Jordan</p>
-                <a href="#" class="inline-block mt-6 px-8 py-2 bg-blue-600 rounded-md uppercase hover:bg-[#ffc107]">Know more
+
+                <h1 class="font-hand text-6xl sm:text-7xl md:text-8xl font-bold mb-10">
+                    Explore
+                </h1>
+
+                <h2 class="font-poppins text-3xl sm:text-4xl md:text-5xl font-semibold mt-3">
+                    Untamed Wilderness
+                </h2>
+
+                <p class="text-lg sm:text-xl md:text-2xl mt-3">
+                    Now operating in Jordan
+                </p>
+
+                <a href="#" class="inline-block mt-6 px-6 sm:px-8 py-2 bg-blue-600 rounded-md uppercase hover:bg-[#ffc107]">
+                    Know more
                     <i class="fa-sharp fa-regular fa-circle-right"></i>
                 </a>
+
             </div>
 
         </section>
+
     </div>
+
     <img src="Group 43.pngx" alt="">
 
     <!-- about -->
 
-    <section class="bg-white min-h-screen py-20">
+    <section class="bg-white min-h-screen py-12 sm:py-16 md:py-20">
 
-        <div class="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-center justify-between gap-16">
-            <div class="lg:w-1/2">
-                <h2 class="font-hand font-semibold text-5xl mb-10">About</h2>
-                <h3 class="font-poppins font-light text-2xl mb-7">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16">
+
+            <div class="w-full lg:w-1/2">
+
+                <h2 class="font-hand font-semibold text-4xl sm:text-5xl mb-8 sm:mb-10">
+                    About
+                </h2>
+
+                <h3 class="font-poppins font-light text-xl sm:text-2xl mb-7">
                     Welcome to SeaMonkey Expeditions, Jordan's Premier Wildlife Experience!
                 </h3>
-                <p class="font-poppins font-light">At SeaMonkey Expeditions, we are dedicated to showcasing the 
-                    remarkable wildlife of Jordan. Join us on an unforgettable 
-                    journey to witness the Arabian Oryx, stunning birds, graceful 
-                    water buffalos, and thriving marine life. Our passion for nature 
+
+                <p class="font-poppins font-light">
+                    At SeaMonkey Expeditions, we are dedicated to showcasing the
+                    remarkable wildlife of Jordan. Join us on an unforgettable
+                    journey to witness the Arabian Oryx, stunning birds, graceful
+                    water buffalos, and thriving marine life. Our passion for nature
                     and commitment to responsible ecotourism ensure an extraordinary a
-                    dventure you'll cherish forever. Let us guide you through the 
-                    untouched beauty of Jordan and its diverse ecosystems, while 
-                    contributing to the conservation efforts that protect these 
+                    dventure you'll cherish forever. Let us guide you through the
+                    untouched beauty of Jordan and its diverse ecosystems, while
+                    contributing to the conservation efforts that protect these
                     precious species.
                 </p>
+
             </div>
-            
-            <div class="lg:w-[55%] flex justify-end">
-                <img src="Explore.png" alt="logo" class="w-[650px] max-w-none object-contain">
+
+            <div class="w-full lg:w-[55%] flex justify-center lg:justify-end">
+
+                <img src="Explore.png"
+                    alt="logo"
+                    class="w-full max-w-[650px] lg:w-[650px] object-contain">
+
             </div>
-            
+
         </div>
-       
+
     </section>
 
     <!-- expeditions -->
@@ -131,159 +178,225 @@
 
         <div class="flex flex-col items-center">
 
-            <h1 class="font-hand text-4xl mb-2 font-bold">Expeditions</h1>
+            <h1 class="font-hand text-4xl mb-2 font-bold">
+                Expeditions
+            </h1>
 
-            <p>Choose your exploration style</p>
+            <p>
+                Choose your exploration style
+            </p>
 
             <!-- icons -->
 
-            <div class="flex justify-between items-center gap-16 mt-8">
+            <div class="flex flex-wrap justify-center items-center gap-3 sm:gap-6 md:gap-10 lg:gap-16 mt-8 px-4">
 
-                <div class="p-8 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
-                    <a href="#alltrips" >
-                        &nbsp; All <br>Trips 
+                <div class="p-5 sm:p-8 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
+                    <a href="#alltrips">
+                        &nbsp; All <br>Trips
                     </a>
                 </div>
 
-                <div class="p-8 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
+                <div class="p-5 sm:p-8 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
                     <a href="#hiking">
                         <img src="Group 24 (4).svg" alt="">Hiking
                     </a>
                 </div>
 
-                <div class="p-6 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
+                <div class="p-4 sm:p-6 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
                     <a href="#camping">
                         <img src="camping (traced).svg" alt="">Camping
                     </a>
                 </div>
 
-                
-                <div class="p-6 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
+                <div class="p-4 sm:p-6 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
                     <a href="#seasafari">
                         <img src="Group 24 (3).svg" alt="">Sea Safari
                     </a>
                 </div>
 
-                
-                <div class="p-6 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
+                <div class="p-4 sm:p-6 border border-transparent hover:border-[#ffc107] rounded-md hover:text-[#ffc107]">
                     <a href="#vehicle">
                         <img src="safari (traced).svg" alt="">Vehicle safari
                     </a>
                 </div>
 
             </div>
+
         </div>
 
         <!-- images -->
 
         <div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-32 mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 sm:px-8 md:px-12 lg:px-32 mt-8">
 
                 <div>
 
                     <div class="relative overflow-hidden rounded-xl">
-                        <img src="card-img-1.png" alt="image1" id="hiking" class="w-full transition-transform duration-500 hover:scale-110">
+                        <img src="card-img-1.png" alt="image1" id="hiking"
+                            class="w-full transition-transform duration-500 hover:scale-110">
+
                         <div class="absolute top-0 right-0 rounded-2xl">
-                            <img src="Group 24 (4).svg" alt="Hiking" class="w-12 h-12">
+                            <img src="Group 24 (4).svg" alt="Hiking" class="w-10 sm:w-12 h-10 sm:h-12">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-3 mt-5">
 
-                        <div class="col-span-2 my-2 text-lg">
+                        <div class="col-span-2 my-2 text-base sm:text-lg">
                             <h1>Water buffalo & bird watching trek</h1>
                         </div>
-                        <div class="col-span-1 ml-5 my-2 text-center">
-                            <p class="bg-orange-200 rounded-sm p-1">Hiking</p>
+
+                        <div class="col-span-1 ml-2 sm:ml-5 my-2 text-center">
+                            <p class="bg-orange-200 rounded-sm p-1">
+                                Hiking
+                            </p>
                         </div>
+
                         <div class="col-span-2 my-2">
                             <i class="fa-solid fa-location-dot"></i>
                             <span class="font-light">Azraq, Jordan</span>
                         </div>
+
                         <div class="col-span-1 my-2">
                             <i class="fa-regular fa-clock"></i>
-                            <span><span class="font-semibold">3</span> Hrs</span>
+                            <span>
+                                <span class="font-semibold">3</span> Hrs
+                            </span>
                         </div>
+
                         <div class="col-span-2 my-2">
-                            <p class="font-light">Group size: Min 3 - Max 20</p>
+                            <p class="font-light">
+                                Group size: Min 3 - Max 20
+                            </p>
                         </div>
+
                     </div>
 
                 </div>
-                
+
                 <div>
 
                     <div class="relative overflow-hidden rounded-xl">
-                        <img src="card-img-2.png" alt="image2" id="seasafari" class="w-full transition-transform duration-500 hover:scale-110">
-                         <div class="absolute top-0 right-0 rounded-2xl">
-                            <img src="Group 24 (3).svg" alt="Hiking" class="w-12 h-12">
+
+                        <img src="card-img-2.png"
+                            alt="image2"
+                            id="seasafari"
+                            class="w-full transition-transform duration-500 hover:scale-110">
+
+                        <div class="absolute top-0 right-0 rounded-2xl">
+                            <img src="Group 24 (3).svg" alt="Hiking" class="w-10 sm:w-12 h-10 sm:h-12">
                         </div>
+
                     </div>
 
                     <div class="grid grid-cols-3 mt-5">
 
-                        <div class="col-span-2 my-2 text-lg">
-                            <h1>Scuba dive or <br> snorkel the red sea</h1>
+                        <div class="col-span-2 my-2 text-base sm:text-lg">
+                            <h1>
+                                Scuba dive or <br>
+                                snorkel the red sea
+                            </h1>
                         </div>
+
                         <div class="col-span-1 my-2 text-center">
-                            <p class="bg-orange-200 rounded-sm p-1">Sea safari</p>
+                            <p class="bg-orange-200 rounded-sm p-1">
+                                Sea safari
+                            </p>
                         </div>
+
                         <div class="col-span-2 my-2">
                             <i class="fa-solid fa-location-dot"></i>
                             <span>Azraq, Jordan</span>
                         </div>
+
                         <div class="col-span-1 my-2">
                             <i class="fa-regular fa-clock"></i>
-                            <span><span class="font-semibold">6</span> Hrs</span>
+                            <span>
+                                <span class="font-semibold">6</span> Hrs
+                            </span>
                         </div>
+
                         <div class="col-span-2 my-2">
-                            <p>Group size: - </p>
+                            <p>
+                                Group size: -
+                            </p>
                         </div>
+
                     </div>
 
-                </div>   
+                </div>
 
                 <div>
 
-                    <div class="relative overflow-hidden rounded-xl" >
-                        <img src="card-img-3.png" alt="image3" id="hiking" class="w-full transition-transform duration-500 hover:scale-110">
-                         <div class="absolute top-0 right-0 rounded-2xl">
-                            <img src="Group 24 (4).svg" alt="Hiking" class="w-12 h-12">
+                    <div class="relative overflow-hidden rounded-xl">
+
+                        <img src="card-img-3.png"
+                            alt="image3"
+                            id="hiking"
+                            class="w-full transition-transform duration-500 hover:scale-110">
+
+                        <div class="absolute top-0 right-0 rounded-2xl">
+                            <img src="Group 24 (4).svg" alt="Hiking" class="w-10 sm:w-12 h-10 sm:h-12">
                         </div>
+
                     </div>
+
                     <div class="grid grid-cols-3 mt-5">
 
-                        <div class="col-span-2 my-2 text-lg">
-                            <h1>Hike in the <br> wild</h1>
+                        <div class="col-span-2 my-2 text-base sm:text-lg">
+                            <h1>
+                                Hike in the <br>
+                                wild
+                            </h1>
                         </div>
+
                         <div class="col-span-1 my-2 text-center">
-                            <p class="bg-orange-200 rounded-sm p-1">Hiking</p>
+                            <p class="bg-orange-200 rounded-sm p-1">
+                                Hiking
+                            </p>
                         </div>
+
                         <div class="col-span-2 my-2">
                             <i class="fa-solid fa-location-dot"></i>
                             <span>Tafilah, Jordan</span>
                         </div>
+
                         <div class="col-span-1 my-2">
                             <i class="fa-regular fa-clock"></i>
-                            <span><span class="font-semibold">5</span> Hrs</span>
+                            <span>
+                                <span class="font-semibold">5</span> Hrs
+                            </span>
                         </div>
+
                         <div class="col-span-2 my-2">
-                            <p>Group size: Min 3 - Max 20</p>
+                            <p>
+                                Group size: Min 3 - Max 20
+                            </p>
                         </div>
+
                     </div>
 
                 </div>
+
             </div>
 
         </div>
 
-        <div class="flex justify-center items-center my-20 ">
+        <div class="flex justify-center items-center my-16 sm:my-20 px-4">
+
             <div class="uppercase">
-                <a href="#" class="bg-blue-700 rounded-md text-white p-3 px-8 hover:bg-orange-400">view all trips
+
+                <a href="#"
+                    class="bg-blue-700 rounded-md text-white p-3 px-6 sm:px-8 hover:bg-orange-400 whitespace-nowrap">
+
+                    view all trips
                     <i class="fa-sharp fa-regular fa-circle-right"></i>
+
                 </a>
+
             </div>
+
         </div>
 
     </section>
@@ -291,48 +404,83 @@
     <!-- gallery -->
 
     <section class="bg-black pb-18" id="gallery">
-        <div class="flex flex-col justify-center items-center">
+
+        <div class="flex flex-col justify-center items-center px-4">
+
             <div>
-                <h1 class="font-hand text-white text-5xl mt-16">Gallery</h1>
+                <h1 class="font-hand text-white text-5xl mt-16">
+                    Gallery
+                </h1>
             </div>
+
             <div>
-                <p class="font-poppins text-white mt-4">See what we have captured</p>
+                <p class="font-poppins text-white mt-4">
+                    See what we have captured
+                </p>
             </div>
+
         </div>
 
-        <div class="grid grid-cols-4 grid-rows-2 h-[500px] gap-5 mt-8 px-28">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-none lg:grid-rows-2 h-auto lg:h-[500px] gap-5 mt-8 px-5 sm:px-8 md:px-12 lg:px-28">
 
-            <div class="col-span-2 row-span-2 overflow-hidden rounded-xl">
-                <img src="elephant.png" alt="image1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-            </div>
+            <div class="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 lg:row-span-2 h-[250px] sm:h-[350px] lg:h-auto overflow-hidden rounded-xl">
 
-            <div class="overflow-hidden rounded-xl">
-                <img src="Trecking.png" alt="image2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-            </div>
-            
-            <div class="overflow-hidden rounded-xl">
-                <img src="Tent.png" alt="image3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                <img src="elephant.png"
+                    alt="image1"
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+
             </div>
 
-            <div class="col-span-2 overflow-hidden rounded-xl">
-                <img src="Ocean.png" alt="image4" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+            <div class="h-[250px] sm:h-[300px] lg:h-auto overflow-hidden rounded-xl">
+
+                <img src="Trecking.png"
+                    alt="image2"
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+
             </div>
+
+            <div class="h-[250px] sm:h-[300px] lg:h-auto overflow-hidden rounded-xl">
+
+                <img src="Tent.png"
+                    alt="image3"
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+
+            </div>
+
+            <div class="col-span-1 sm:col-span-2 lg:col-span-2 h-[250px] sm:h-[300px] lg:h-auto overflow-hidden rounded-xl">
+
+                <img src="Ocean.png"
+                    alt="image4"
+                    class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+
+            </div>
+
         </div>
 
-        <div class="flex justify-center items-center py-16">
+        <div class="flex justify-center items-center py-12 sm:py-16 px-4">
+
             <div class="uppercase">
-                <a href="#" class="bg-blue-700 rounded-md text-white p-3 px-12 hover:bg-orange-400">view all
+
+                <a href="#"
+                    class="bg-blue-700 rounded-md text-white p-3 px-8 sm:px-12 hover:bg-orange-400 whitespace-nowrap">
+
+                    view all
                     <i class="fa-sharp fa-regular fa-circle-right"></i>
+
                 </a>
+
             </div>
+
         </div>
 
     </section>
 
     <!-- faq -->
-    <section class="py-20 bg-white" id="faq">
 
-        <div class="text-center mb-16">
+    <section class="py-16 sm:py-20 bg-white" id="faq">
+
+        <div class="text-center mb-12 sm:mb-16 px-4">
+
             <h2 class="font-hand text-4xl font-bold">
                 FAQ
             </h2>
@@ -340,34 +488,48 @@
             <p class="mt-2">
                 Frequently Asked Questions
             </p>
+
         </div>
 
-        <div class="max-w-5xl mx-auto px-8">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
 
-            <p class="border-t border-b border-black py-5 flex justify-between">Is spotting wildlife guaranteed? 
+            <p class="border-t border-b border-black py-5 flex justify-between gap-4">
+                Is spotting wildlife guaranteed?
+
                 <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 hover:rotate-180"></i>
             </p>
-            <p class="border-t border-b border-black py-5 flex justify-between">What wildlife are we expected to see in Jordan?
-                <br>  Jordan is home to vast wildlife, the country is a very
-                    important migratory route for many bird species, the red
-                    sea is home to over 500 species of fish. Apart from the
-                    vast Jordanian wilderness, at a Seamonkey adventure, we
-                    try to maximize your chances of also spotting Arabian
-                    oryx, water buffalo, raptors, sea turtles, rock hyrax,
-                    desert foxes & Nubian ibex.
+
+            <p class="border-t border-b border-black py-5 flex justify-between gap-4">
+                What wildlife are we expected to see in Jordan?
+
+                <br>
+                Jordan is home to vast wildlife, the country is a very
+                important migratory route for many bird species, the red
+                sea is home to over 500 species of fish. Apart from the
+                vast Jordanian wilderness, at a Seamonkey adventure, we
+                try to maximize your chances of also spotting Arabian
+                oryx, water buffalo, raptors, sea turtles, rock hyrax,
+                desert foxes & Nubian ibex.
+
                 <i class="fa-solid fa-chevron-up text-sm"></i>
             </p>
-             <p class="border-t border-b border-black py-5 flex justify-between">When is the best time to visit Jordan to look for wildlife? 
+
+            <p class="border-t border-b border-black py-5 flex justify-between gap-4">
+                When is the best time to visit Jordan to look for wildlife?
+
                 <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300 hover:rotate-180"></i>
             </p>
 
         </div>
 
-        <div class="flex justify-center mt-12">
+        <div class="flex justify-center mt-12 px-4">
 
-            <a href="#" class="bg-blue-600 text-white px-10 py-1 rounded-md font-semibold hover:bg-[#ffc107] transition-colors duration-300">
+            <a href="#"
+                class="bg-blue-600 text-white px-8 sm:px-10 py-1 rounded-md font-semibold hover:bg-[#ffc107] transition-colors duration-300 whitespace-nowrap">
+
                 VIEW ALL
                 <i class="fa-regular fa-circle-right ml-2"></i>
+
             </a>
 
         </div>
@@ -375,195 +537,202 @@
     </section>
 
     <!-- contact -->
-<section class="relative bg-cover bg-center bg-no-repeat" 
-    style="background-image: url('pexels-alpin-visuals-2156936906-34448034.jpg');" id="contact">
-    
-    <div class="absolute inset-0 bg-black/50"></div>
 
-   
-    <div class="relative z-10 flex justify-center py-16 px-6">
+    <section class="relative bg-cover bg-center bg-no-repeat"
+        style="background-image: url('pexels-alpin-visuals-2156936906-34448034.jpg');"
+        id="contact">
 
-        <div class="grid grid-cols-1 lg:grid-cols-5 max-w-4xl w-full">
+        <div class="absolute inset-0 bg-black/50"></div>
 
-            <div class="lg:col-span-2 h-[460px]">
-                <img src="Rectangle 20 (2) (1).png" alt="Mountain" class="w-full h-full object-cover">
+        <div class="relative z-10 flex justify-center py-12 sm:py-16 px-4 sm:px-6">
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 max-w-4xl w-full">
+
+                <div class="lg:col-span-2 h-[300px] sm:h-[400px] lg:h-[460px]">
+
+                    <img src="Rectangle 20 (2) (1).png"
+                        alt="Mountain"
+                        class="w-full h-full object-cover">
+
+                </div>
+
+                <div class="lg:col-span-3 backdrop-blur-md px-4 sm:px-6 md:px-8 py-8">
+
+                    <h2 class="font-hand text-white text-4xl text-center mb-8">
+                        Lets Get connected
+                    </h2>
+
+                    <form>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+                            <div>
+
+                                <label class="block text-white text-sm mb-2">
+                                    FirstName
+                                </label>
+
+                                <input type="text"
+                                    class="w-full h-10 px-3 bg-transparent border border-white rounded-md text-white">
+
+                            </div>
+
+                            <div>
+
+                                <label class="block text-white text-sm mb-2">
+                                    LastName
+                                </label>
+
+                                <input type="text"
+                                    class="w-full h-10 px-3 bg-transparent border border-white rounded-md text-white">
+
+                            </div>
+
+                        </div>
+
+                        <!-- Email + Phone -->
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
+
+                            <div>
+
+                                <label class="block text-white text-sm mb-2">
+                                    Email
+                                </label>
+
+                                <input type="email"
+                                    class="w-full h-10 px-3 bg-transparent border border-white rounded-md text-white">
+
+                            </div>
+
+                            <div>
+
+                                <label class="block text-white text-sm mb-2">
+                                    Phone
+                                </label>
+
+                                <input type="tel"
+                                    class="w-full h-10 px-3 bg-transparent border border-white rounded-md text-white">
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-3">
+
+                            <label class="block text-white text-sm mb-2">
+                                Message
+                            </label>
+
+                            <textarea rows="5"
+                                class="w-full px-3 py-2 bg-transparent border border-white rounded-md text-white"></textarea>
+
+                        </div>
+
+                        <div class="flex justify-center mt-7">
+
+                            <button type="submit"
+                                class="bg-blue-600 hover:bg-orange-400 text-white font-semibold text-sm px-10 py-3 rounded-md transition duration-300">
+
+                                SUBMIT
+                                <i class="fa-regular fa-circle-right ml-1"></i>
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
             </div>
 
+        </div>
 
-           
-            <div class="lg:col-span-3 backdrop-blur-md px-6 md:px-8 py-8">
+    </section>
 
-                <h2 class="font-hand text-white text-4xl text-center mb-8">
-                    Lets Get connected
-                </h2>
+    <!-- footer -->
 
-                <form>
+    <footer class="bg-black text-white">
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div class="flex flex-col items-center py-8">
 
-                        <div>
-                            <label class="block text-white text-sm mb-2">
-                                FirstName
-                            </label>
+            <div class="mb-5">
 
-                            <input
-                                type="text"class="w-full h-10 px-3 bg-transparent border border-white rounded-md text-white">
-                        </div>
+                <img src="logo.svg"
+                    alt="SeaMonkey"
+                    class="w-16 h-auto mx-auto">
 
-                        <div>
-                            <label class="block text-white text-sm mb-2">
-                                LastName
-                            </label>
+                <p class="text-center text-sm mt-1">
+                    SeaMonkey
+                </p>
 
-                            <input
-                                type="text"
-                                class="w-full h-10 px-3 bg-transparent border border-white rounded-md text-white"
-                            >
-                        </div>
+            </div>
 
-                    </div>
+            <nav class="flex flex-wrap justify-center gap-5 sm:gap-8 text-xs uppercase px-4">
 
+                <a href="#expeditions"
+                    class="hover:text-orange-400 transition">
+                    Expeditions
+                </a>
 
-                    <!-- Email + Phone -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
+                <a href="#gallery"
+                    class="hover:text-orange-400 transition">
+                    Gallery
+                </a>
 
-                        <div>
-                            <label class="block text-white text-sm mb-2">
-                                Email
-                            </label>
+                <a href="#faq"
+                    class="hover:text-orange-400 transition">
+                    FAQ
+                </a>
 
-                            <input
-                                type="email"
-                                class="w-full h-10 px-3 bg-transparent border border-white rounded-md text-white"
-                            >
-                        </div>
+                <a href="#privacy"
+                    class="hover:text-orange-400 transition">
+                    Privacy Policies
+                </a>
 
-                        <div>
-                            <label class="block text-white text-sm mb-2">
-                                Phone
-                            </label>
+            </nav>
 
-                            <input
-                                type="tel"
-                                class="w-full h-10 px-3 bg-transparent border border-white rounded-md text-white"
-                            >
-                        </div>
+            <div class="flex gap-5 mt-8 text-lg">
 
-                    </div>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
 
-                    <div class="mt-3">
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
 
-                        <label class="block text-white text-sm mb-2">
-                            Message
-                        </label>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
 
-                        <textarea
-                            rows="5"
-                            class="w-full px-3 py-2 bg-transparent border border-white rounded-md text-white"
-                        ></textarea>
-
-                    </div>
-
-                    <div class="flex justify-center mt-7">
-
-                        <button
-                            type="submit"
-                            class="bg-blue-600 hover:bg-orange-400 text-white font-semibold text-sm px-10 py-3 rounded-md transition duration-300"
-                        >
-                            SUBMIT
-                            <i class="fa-regular fa-circle-right ml-1"></i>
-                        </button>
-
-                    </div>
-
-                </form>
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
 
             </div>
 
         </div>
 
-    </div>
-</section>
+        <div class="border-t border-gray-400">
 
-<!-- footer -->
-<footer class="bg-black text-white">
+            <div class="max-w-5xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center text-xs gap-3">
 
-   
-    <div class="flex flex-col items-center py-8">
+                <p>
+                    Copyright © 2023 Seamonkey
+                </p>
 
-        
-        <div class="mb-5">
-            <img
-                src="logo.svg" alt="SeaMonkey" class="w-16 h-auto mx-auto">
+                <a href="#"
+                    class="md:mt-0 hover:text-orange-400 transition">
+                    Terms & Conditions
+                </a>
 
-            <p class="text-center text-sm mt-1">
-                SeaMonkey
-            </p>
-        </div>
-
-
-        
-        <nav class="flex flex-wrap justify-center gap-8 text-xs uppercase">
-            <a href="#expeditions" class="hover:text-orange-400 transition">
-                Expeditions
-            </a>
-
-            <a href="#gallery" class="hover:text-orange-400 transition">
-                Gallery
-            </a>
-
-            <a href="#faq" class="hover:text-orange-400 transition">
-                FAQ
-            </a>
-
-            <a href="#privacy" class="hover:text-orange-400 transition">
-                Privacy Policies
-            </a>
-        </nav>
-
-
-        
-        <div class="flex gap-5 mt-8 text-lg">
-
-            <a href="#">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+            </div>
 
         </div>
 
-    </div>
-
-
-    
-    <div class="border-t border-gray-400">
-
-        <div class="max-w-5xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center text-xs">
-
-            <p>
-                Copyright © 2023 Seamonkey
-            </p>
-
-            <a href="#" class="mt-3 md:mt-0 hover:text-orange-400 transition">
-                Terms & Conditions
-            </a>
-
-        </div>
-
-    </div>
-
-</footer>
+    </footer>
 
 </body>
 </html>
